@@ -1,0 +1,1587 @@
+html{
+scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: "Open Sans", sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 30x;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+h3{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+/* БУРГЕР МЕНЮ */
+
+
+.burger{ 
+    display: none;
+}
+
+
+.nav_menu.active{
+    max-height: 999px;
+}
+
+
+/* БУРГЕР МЕНЮ */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    transition: 0.3s;
+    position: relative;
+}
+
+button{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    background-color:#00897b;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 35px;
+    padding-left: 35px;
+    border: none;
+    color: aliceblue;
+    outline: none;
+    border-radius: 0;
+    transition: 0.3s;
+    cursor: pointer;
+    text-transform:uppercase;
+}
+button:hover{
+    background-color: #005e54;
+}
+button:active{
+    background-color: #014942;
+}
+.outline_a{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+    border: none;
+    color: rgb(255, 255, 255);
+    border-radius: 0;
+    transition: 0.3s;
+    cursor: pointer;
+    text-transform:uppercase;
+    outline-offset: -3px;
+    margin-right: 20px;
+}
+.outline_b{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: transparent;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+    border: none;
+    color: rgb(255, 255, 255);
+    outline: 3px solid rgb(255, 255, 255);
+    border-radius: 0;
+    transition: 0.3s;
+    cursor: pointer;
+    text-transform:uppercase;
+    outline-offset: -3px;
+}
+button.outline:hover{
+    background-color:#005e54
+}
+button.outline:active{
+    background-color:#014942
+}
+a{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: inline-flex;
+}
+ul{
+    list-style: none;
+}
+input{
+    border-radius: 10px;
+    height: 100%;
+    background-color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    border: none;
+}
+textarea{
+    border-radius: 10px;
+    background-color: white;
+    padding: 15px;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    border: none;
+    color: black;
+    resize: none;
+}
+input:focus{
+    outline: 10px;
+    background-color:#00799e;
+    border:solid;
+    transition: 0.5s;
+}
+textarea:focus{
+    outline: 10px;
+    background-color:#00799e;
+    border:solid;
+    transition: 0.5s;
+}
+.button_form{
+    height: 75px;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.section_heading{
+    width: 630px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 65px;
+    margin-bottom: 45px;
+}
+.about_cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_card{
+    text-align: center;
+    font-size: 20px;
+    width: 215px;
+    margin-top: 10px;
+}
+.about_card_title{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.about{
+    padding-bottom: 120px;
+}
+.about_card_img{
+    height: 62px;
+    width: 63px;
+}
+.services_card{
+    width: 370px;
+    height: 430px;
+    background-color: white;
+    text-align: center;
+    padding: 60px 40px 40px 40px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+.services_card_img{
+    width: 60px;
+    height: 60px;
+    transition: 0.3s;
+}
+.services{
+    background-color: #e4fdf9;
+    padding-bottom: 120px;
+}
+.services_card_button{
+    color: #000000;
+    outline: 2px black solid;
+    background-color: white;
+    transition: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.services_card_button:hover{
+    color: white;
+}
+.services_card:hover button.services_card_button{
+    outline-color: #ffffff;
+}
+.services_card_title{
+    transition: 0.3s;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.services_card_text{
+    margin-bottom: 50px;
+    transition: 0.3s;
+}
+.services_cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.services_card:hover{
+    background-color:#00897b;
+    cursor: pointer;
+    box-shadow: 0 0 7px 0 black;
+}
+.services_card:hover .services_card_text{
+    color: white;
+}
+.services_card:hover .services_card_title{
+    color: white;
+}
+.services_card:hover .services_card_img{
+    filter: invert();
+}
+.all_works_button{
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+    background-color: white;
+    color: black;
+    outline: 2px solid #00897b;    
+    outline-offset: -2px;
+    transition: 0.3s;
+}
+.all_works_button:hover{
+    color: white;
+    background-color: #00897b;
+    outline: none;
+}
+.works_button {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: transparent;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: black;
+    outline: 2px solid #00897b;
+    transition: 0.3s;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline-offset: -2px;
+    margin-right: 10px;
+    margin-left: 10px;
+    outline-color: #00897b;
+}
+button.works_button:hover{
+    color: white;
+    background-color: #00897b;
+    outline: none;
+}
+
+.works{
+    padding-bottom: 120px;
+
+}
+.works_cards_buttons{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 120px;
+}
+.works_cards{
+    grid-template-columns: 370px 370px 370px;
+    grid-auto-rows: 370px;
+    display: grid;
+    grid-gap: 30px;
+    padding-bottom: 130px;
+}
+.works_card_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.works_card{
+    position: relative;
+    overflow: hidden;
+}
+.works_card_overlay{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    align-items: center;
+    transform: translate(0, -100%);
+    transition: 0.7s;
+}
+.view_all{
+    text-align: center;
+}
+#view_all_button{
+    padding-left: 55px;
+    padding-right: 55px;
+}
+.view_all_button:hover{
+    color: white;
+    background-color: #00897b;
+    outline: none;
+}
+.works_card:hover .works_card_overlay{
+    transform: translate(0);
+}
+.services_card_title{
+    color: rgb(0, 0, 0);
+}
+.services_card_text{
+    color: rgb(0, 0, 0);
+}
+.pricing_cards{
+    display: flex;
+    justify-content: space-between;
+}
+.pricing{
+    background-color: #f0f0f1;
+    padding-bottom: 120px;
+}
+.pricing_card{
+    background-color: white;
+    width: 370px;
+    height: 670px;
+    text-align: center;
+    transition: 0.5s;
+}
+.pricing_card:hover{
+    box-shadow: 0px 1px 51px -13px #84896F;;
+}
+.pricing_card_head{
+    color: white;
+    background-color: #3949ab;
+    height: 200px;
+    clip-path: polygon(0 1%, 100% 0, 100% 85%, 0 100%);
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+.pricing_cards_body{
+    padding-top: 50px;
+}
+.pricing_card_item{
+    margin-bottom: 30px;
+    font-size: 17px;
+    position: relative;
+}
+.pricing_card_item::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    height: 1px;
+    width: 180px;
+    background-color: #00000042;
+    margin-top: 10px;
+}
+.pricing_card_title{
+    color: white;
+    font-size: 25px;
+}
+.pricing_card_text span{
+    font-size: 50px;
+}
+.pricing_card_text{
+    color: white;
+}
+.pricing_card_text span::before{
+    content: "$";
+    font-size: 25px;
+    vertical-align: super;
+}
+.pricing_card_list{
+    padding-bottom: 60px;
+    padding-top: 50px;
+}
+.order_b{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: transparent;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: black;
+    outline: 2px solid #00897b;
+    transition: 0.3s;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline-offset: -2px;
+    margin-right: 10px;
+    margin-left: 10px;
+    outline-color: #00897b;
+}
+.order_b:hover{
+    color: white;
+    background-color: #00897b;
+    outline: none;
+}
+.team_heading{
+    padding-top: 120px;
+    text-align: center;
+    padding-bottom: 120px;
+    }
+.team_cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.team_card_buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 10px;
+}
+.team_card{
+    width: 370px;
+    text-align: center;
+    width: absolute;
+
+}
+.elipse_img{
+    text-align: center;
+}
+a.team_card_icons{
+    color: #00897b;
+    background-color: #f0f1f1;
+    border-radius: 12px;
+    font-size: 30px;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 10px;
+    transition: 0.3s;
+}
+a.team_card_icons:hover{
+    color: white;
+    background-color: #3949ab;
+    transition: 0.3s;
+}
+.team_card_text{
+    padding-bottom: 15px;
+}
+.team_card_img{
+    width: 100%;
+}
+.our_team{
+    padding-bottom: 120px;
+}
+.blog{
+    background-color: #e4fdf9;
+    padding-bottom: 120px;
+}
+.button_class_blog{
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        background-color:#00897b;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: black;
+        transition: 0.3s;
+        cursor: pointer;
+        text-transform: uppercase;
+        color: white;
+    }
+    .button_class_blog:hover{
+        background-color:#003a34;
+    }
+.post{
+    display: flex;
+    height: 400px;
+}
+.title_card_blog{
+    color: #005e54;
+    text-align: left;
+    margin-bottom: 25px;
+}
+.post_img{
+    flex-grow: 1;
+    width: 50%;
+    flex-shrink: 0;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+.post_text{
+    flex-grow: 1;
+    width: 50%;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    text-align: left;
+    padding-top: 60px;
+}
+.post_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.post_info{
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 17px;
+}
+.post_info i{
+    margin-right: 15px;
+    font-size: 17px;
+}
+.post_info i:last-child{
+    margin-left: 30px;
+}
+.post:nth-child(even){
+    flex-direction: row-reverse;
+}
+.post:nth-child(even) .post_text{
+    padding-left: 0;
+    padding-right: 15px;
+}
+.post:nth-child(even) .post_img{
+    padding-left: 15px;
+    padding-right: 0;
+}
+.post_list{
+    margin-bottom: 125px;
+}
+.post_button{
+    text-align: center;
+}
+.contact{
+    background-image: url(./img/ContactBG.png);
+    background-size: cover;
+    padding-bottom: 125px;
+    position: relative;
+    z-index: 1;
+}
+.contact::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #272727ea;
+    z-index: -1;
+}
+.contact .section_heading h2{
+    color: white;
+}
+.contact .section_heading p{
+    color: white;
+}
+.contact_cards{
+    display: flex;
+    margin-bottom: 85px;
+}
+.contact_card{
+    width: 330px;
+    text-align: center;
+}
+.contact_card_icon{
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    background-color: #3949ab;
+    padding-top: 20px;
+    box-sizing: border-box;
+    margin: 0 auto 35px;
+}
+.contact_card_icon img{
+    height: 65px;
+    filter: invert();
+}
+.contact_text_card{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+.contact_cards{
+    display: flex;
+    justify-content:space-evenly;
+}
+.form{
+    text-align: center;
+}
+.footer_text{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.contact_form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px 325px 75px;
+    grid-gap: 30px;
+}
+
+#form_text{
+    grid-column: 1/5;
+}
+#form_name{
+    grid-column: 1/3;
+}
+#form_mail{
+    grid-column: 3/5;
+}
+#form_button{
+    grid-column: 4/5;
+}
+
+.nav_item{
+    display: inline-block;
+    margin-left: 35px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+.nav_item:hover::after{
+    transform: translate(0);
+}
+.nav_item::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #003a34;
+    transform: translate(-100%);
+    transition: 0.5s;
+}
+header{
+    text-align: center;
+    background-image: url(./img/bg-head.png);
+    padding-top: 180px;
+    padding-bottom: 180px;
+    position: relative;
+    background-size: cover;
+    z-index: 1;
+}
+.header_text{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 110px;
+}
+.header_link{
+    position: absolute;
+    bottom: 65px;
+    color: rgb(255, 255, 255);
+}
+header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000b0;
+    z-index: -1;
+}
+
+/* СВАЙПЕР */
+    .swiper-container{
+    overflow: hidden;
+    width: 1400px;
+    }
+    .swiper-slide{
+        width: 500px;
+    }
+    .swiper-slide {
+        text-align: center;
+        background: #fff;
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mySwiper{
+        overflow: hidden;
+    }
+    .selipse_img{
+        color: black;
+    }
+    .swiper-wrapper{
+        height: max-content;
+    }
+    .swiper-pagination{
+        position: static!important;
+    }
+    .swiper-pagination-bullet{
+        padding-top: 25px;
+        padding: 5px 8px!important;
+        border-radius: 30!important;
+        width: auto!important;
+        height: 6px!important;
+        text-align: center!important;
+        line-height: 30px!important;
+        font-size: 12px!important;
+        color: #000!important;
+        opacity: 1!important;
+        background: #00897b!important;
+    }
+    .swiper-pagination-bullet-active {
+        color: #00897b!important;
+        background: #3949ab!important;
+    }
+
+/* СВАЙПЕР */
+
+@media screen and (max-width: 1280px){
+    .container {
+        width: 960px;
+    }
+    .works_cards{
+        grid-auto-rows: 300px;
+        grid-template-columns: 300px 300px 300px;
+    }
+    .services_card{
+        width: 300px;
+    }
+    .team_card{
+        width: 300px;
+    }
+    .swiper-container {
+        overflow: hidden;
+        width: 1010px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .container {
+        width: 700px;
+    }
+    .nav_menu{
+        overflow: hidden;
+        max-height: 0;
+        transition: 0.5s;        
+        position: absolute;
+        right: 0;
+        top: 120px;
+        z-index: 99;
+    }
+    
+    .burger{
+        display: block;
+        font-size: 40px;
+    }
+    .nav_list{
+        background-color: rgb(255, 255, 255);
+        width: 250px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .works_cards{
+        grid-auto-rows: 300px;
+        grid-template-columns: 300px 300px;
+    }
+    .services_card{
+        width: 250px;
+    }
+    .pricing_cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricing_card{
+        margin-bottom: 25px;
+    }
+    .team_card{
+        width: 300px;
+    }
+    .team_card_img{
+        width: 80%;
+    }
+    .post {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+        margin: 0 auto;
+        text-align: left;
+        margin-top: 25px;
+
+    }
+    .post_text {
+        box-sizing: border-box;
+        text-align: left;
+        padding-bottom: 25px;
+        width: auto;
+    }
+    .post_img {
+        width: auto;
+        padding: 0;
+    }
+    .post:nth-child(even) .post_img {
+        padding: 0;
+    }
+
+    .post:nth-child(even){
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .swiper-container{
+        width: 600px;
+    } 
+
+}
+@media screen and (max-width: 768px){
+    .container {
+        width: 405px;
+    }
+
+    /* БУРГЕР */
+
+    .nav_menu{
+        overflow: hidden;
+        max-height: 0;
+        transition: 0.5s;        
+        position: absolute;
+        right: 0;
+        top: 120px;
+        z-index: 99;
+    }
+    
+    .burger{
+        display: block;
+        font-size: 40px;
+    }
+    .nav_list{
+        background-color: rgb(255, 255, 255);
+        width: 250px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* БУРГЕР */
+
+    .header_title{
+        font-size: 40px;
+    }
+    .header_buttons{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .about{
+        padding-top: 50px;
+    }
+    .section_heading{
+        width: auto;
+        padding-top: 0;
+    }
+    .about_cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .services_card{
+        width: 250px;
+    }
+    .services_cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about_card{
+        margin-bottom: 20px;
+    }
+    .outline_a{
+        margin-right: 0;
+    }
+    .works{
+        padding-bottom: 70px;
+        padding-top: 25px;
+    }
+    .works_cards_buttons{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .all_works_button{
+        padding: 0;
+        padding-top: 0;
+        height: 57px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .works_button{
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+    .our_team{
+        padding-bottom: 55px;
+    }
+    .works_cards{
+        grid-auto-rows: 185px;
+        grid-template-columns: 185px 185px;
+    }
+    .services{
+        padding-top: 50px;
+    }
+    .pricing{
+        padding-top: 20px;
+        padding-bottom: 45px;
+    }
+    .pricing_card{
+        margin-bottom: 25px;
+    }
+    .pricing_cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .blog{
+        padding-top: 20px;
+        padding-bottom: 75px;
+    }
+    .team_card{
+        width: 300px;
+    }
+    .team_card_img{
+        width: 80%;
+    }
+
+    .contact{
+        padding-top: 20px;
+        padding-bottom: 35px;
+    }
+    .swiper-container{
+        width: 400px;
+    }
+    .contact_cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact_card{
+        margin-bottom: 35px;
+    }
+    .button_form{
+        height: 55px;
+    }
+    .section_heading{
+        width: auto;
+        padding-top: 25px;
+    }
+    .post {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+        margin: 0 auto;
+        text-align: left;
+        margin-top: 25px;
+
+    }
+    .post_text {
+        box-sizing: border-box;
+        text-align: left;
+        padding-bottom: 25px;
+        width: auto;
+    }
+    .post_img {
+        width: auto;
+        padding: 0;
+    }
+    .post:nth-child(even) .post_img {
+        padding: 0;
+    }
+
+    .post:nth-child(even){
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+@media screen and (max-width: 425px){
+    .container {
+        width: 405px;
+    }
+
+    /* БУРГЕР */
+
+    .nav_menu{
+        overflow: hidden;
+        max-height: 0;
+        transition: 0.5s;        
+        position: absolute;
+        right: 0;
+        top: 120px;
+        z-index: 99;
+    }
+    
+    .burger{
+        display: block;
+        font-size: 40px;
+    }
+    .nav_list{
+        background-color: rgb(255, 255, 255);
+        width: 250px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* БУРГЕР */
+
+    .header_title{
+        font-size: 40px;
+    }
+    .header_buttons{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .about{
+        padding-top: 50px;
+    }
+    .section_heading{
+        width: auto;
+        padding-top: 25px;
+    }
+    .about_cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .services_card{
+        width: 250px;
+    }
+    .services_cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about_card{
+        margin-bottom: 20px;
+    }
+
+    .works{
+        padding-bottom: 70px;
+        padding-top: 25px;
+    }
+    .works_cards_buttons{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .all_works_button{
+    }
+
+    .works_button{
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+    .our_team{
+        padding-bottom: 55px;
+    }
+    .works_cards{
+        grid-auto-rows: 185px;
+        grid-template-columns: 185px 185px;
+    }
+    .services{
+        padding-top: 50px;
+    }
+    .pricing{
+        padding-top: 20px;
+        padding-bottom: 45px;
+    }
+    .pricing_card{
+        width: 250px;
+    }
+    .pricing_cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricing_card{
+        margin-bottom: 25px;
+    }
+    .blog{
+        padding-top: 20px;
+        padding-bottom: 75px;
+    }
+    .team_card{
+        width: 300px;
+    }
+    .team_card_img{
+        width: 80%;
+    }
+
+    .contact{
+        padding-top: 20px;
+        padding-bottom: 35px;
+    }
+    .swiper-container{
+        width: 370px;
+    }
+    .contact_cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact_card{
+        margin-bottom: 35px;
+    }
+    .contact_form{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px  50px 225px;
+        grid-gap: 30px;
+    }
+    #form_name{
+        grid-column: 1/1;
+    }
+    #form_mail{
+        grid-column: 1/1;
+    }
+    #form_text{
+        grid-column: 1/1;
+    }
+    #form_button{
+        grid-column: 1/1;
+    }
+    .button_form{
+        height: 55px;
+    }
+
+
+    .post {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+        margin: 0 auto;
+        text-align: left;
+        margin-top: 25px;
+
+    }
+    .post_text {
+        box-sizing: border-box;
+        text-align: left;
+        padding-bottom: 25px;
+        width: auto;
+    }
+    .post_img {
+        width: auto;
+        padding: 0;
+    }
+    .post:nth-child(even) .post_img {
+        padding: 0;
+    }
+
+    .post:nth-child(even){
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+@media screen and (max-width: 375px){
+    .container {
+        width: 320px;
+    }
+
+    /* БУРГЕР */
+
+    .nav_menu{
+        overflow: hidden;
+        max-height: 0;
+        transition: 0.5s;        
+        position: absolute;
+        right: 0;
+        top: 120px;
+        z-index: 99;
+    }
+    
+    .burger{
+        display: block;
+        font-size: 40px;
+    }
+    .nav_list{
+        background-color: rgb(255, 255, 255);
+        width: 250px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* БУРГЕР */
+
+    .header_title{
+        font-size: 40px;
+    }
+    .header_buttons{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .outline_a{
+        margin-bottom: 15px;
+    }
+    .about{
+        padding-top: 50px;
+    }
+    .section_heading{
+        width: auto;
+        padding-top: 25px;
+    }
+    .about_cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .services_card{
+        width: 250px;
+    }
+    .services_cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about_card{
+        margin-bottom: 20px;
+    }
+
+    .works{
+        padding-bottom: 70px;
+    }
+    .works_cards_buttons{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .all_works_button{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .works_button{
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+    .our_team{
+        padding-bottom: 55px;
+    }
+    .works_cards{
+        grid-auto-rows: 155px;
+        grid-template-columns: 155px 155px;
+    }
+    .services{
+        padding-top: 50px;
+    }
+    .pricing{
+        padding-top: 20px;
+        padding-bottom: 45px;
+    }
+    .pricing_card{
+        width: 250px;
+    }
+    .pricing_cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricing_card{
+        margin-bottom: 25px;
+    }
+    .blog{
+        padding-top: 20px;
+        padding-bottom: 75px;
+    }
+    .team_card{
+        width: 300px;
+    }
+    .team_card_img{
+        width: 80%;
+    }
+    .text_card_blog{
+        width: auto;
+    }
+
+    .contact{
+        padding-top: 20px;
+        padding-bottom: 35px;
+    }
+    .swiper-container{
+        width: 300px;
+    }
+    .contact_cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact_card{
+        margin-bottom: 35px;
+    }
+
+    .contact_form{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px  50px 225px;
+        grid-gap: 30px;
+    }
+    #form_name{
+        grid-column: 1/1;
+    }
+    #form_mail{
+        grid-column: 1/1;
+    }
+    #form_text{
+        grid-column: 1/1;
+    }
+    #form_button{
+        grid-column: 1/1;
+    }
+
+    .post {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .post_text {
+        box-sizing: border-box;
+        text-align: left;
+        padding-top: 60px;
+        padding-left: 0;
+    }
+    .text_card_blog{
+        width: 300px;
+    }
+    .post_img {
+        width: auto;
+    }
+    .post:nth-child(even) .post_img {
+        width: auto;
+    }
+    .post:nth-child(even) {
+    display: flex;
+    flex-direction: column;
+}
+}
+@media screen and (max-width: 320px){
+    .container {
+        width: 300px;
+    }
+    .section_heading{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: auto;
+        padding-top: 0;
+    }
+    /* БУРГЕР */
+    h2{
+        font-size: 40px;
+    }
+    .nav_menu{
+        overflow: hidden;
+        max-height: 0;
+        transition: 0.5s;        
+        position: absolute;
+        right: 0;
+        top: 120px;
+        z-index: 99;
+    }
+    
+    .burger{
+        display: block;
+        font-size: 40px;
+    }
+    .nav_list{
+        background-color: rgb(255, 255, 255);
+        width: 250px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* БУРГЕР */
+
+    .header_title{
+        font-size: 40px;
+    }
+    .header_buttons{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .outline_a{
+        margin-bottom: 15px;
+    }
+    .about{
+        padding-top: 30px;
+    }
+
+    .about_cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .services_card{
+        width: 250px;
+    }
+    .services_cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about_card{
+        margin-bottom: 20px;
+    }
+
+    .works{
+        padding-bottom: 70px;
+        margin-top: 50px;
+    }
+    .works_cards_buttons{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .all_works_button{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .works_button{
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+    .our_team{
+        padding-bottom: 55px;
+    }
+    .works_cards{
+        grid-auto-rows: 125px;
+        grid-template-columns: 125px 125px;
+    }
+    .services{
+        padding-top: 30px;
+    }
+    .pricing{
+        padding-top: 30px;
+        padding-bottom: 45px;
+    }
+    .pricing_card{
+        width: 250px;
+    }
+    .pricing_cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricing_card{
+        margin-bottom: 25px;
+    }
+    .all_works_button{
+        margin-bottom: 15px;
+    }
+    .blog{
+        padding-top: 30px;
+        padding-bottom: 75px;
+    }
+    .team_card{
+        width: 300px;
+    }
+    .team_card_img{
+        width: 80%;
+    }
+    .text_card_blog{
+        width: 280px;
+    }
+    .contact{
+        padding-top: 30px;
+        padding-bottom: 35px;
+    }
+    .swiper-container{
+        width: 300px;
+    }
+    .contact_cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact_card{
+        width: 300px;
+        margin-bottom: 35px;
+    }
+    .contact_form{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px  50px 225px;
+        grid-gap: 30px;
+    }
+    #form_name{
+        grid-column: 1/1;
+    }
+    #form_mail{
+        grid-column: 1/1;
+    }
+    #form_text{
+        grid-column: 1/1;
+    }
+    #form_button{
+        grid-column: 1/1;
+    }
+}
+
